@@ -1,8 +1,8 @@
-import faq_img from "../assets/images/faq_img.jpg";
+import faq_img from "../assets/images/faq_img.png";
 function About() {
   return (
     <section
-      className="about-us-area pt-120 pb-120"
+      className="about-us-area pt-60 pb-60"
       data-background="img/bg/faq_bg.jpg"
       style={{ backgroundImage: "url(img/bg/faq_bg.jpg)" }}
     >
@@ -40,7 +40,6 @@ function About() {
                 products meet the highest standards of quality and
                 effectiveness.
               </p>
-
               <ul className="about-list">
                 <li>
                   <i className="fas fa-check"></i> Trusted manufacturer and

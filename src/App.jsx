@@ -1,9 +1,15 @@
 import { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Preloader from "./components/Preloader";
 import Navbar from "./components/Navbar";
-import Slider from "./components/Slider";
 import About from "./components/About";
 import Footer from "./components/Footer";
+import Features from "./components/Features";
+import FarmingArea from "./components/FarmingArea";
+import Shop from "./components/Shop";
+import HomePage from "./components/Homepage";
+import Breadcrumb from "./components/Breadcrumb";
+import ContactArea from "./components/ContactArea";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -16,22 +22,48 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      {isLoading ? (
-        <Preloader />
-      ) : (
-        <>
-          <header>
+    <Router>
+      <div className="App">
+        {isLoading ? (
+          <Preloader />
+        ) : (
+          <>
             <Navbar />
-          </header>
-          <main>
-            <Slider />
-            <About />
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route
+                path="/about"
+                element={
+                  <>
+                    <Breadcrumb title="About Us" />
+                    <About />
+                  </>
+                }
+              />
+              <Route
+                path="/shop"
+                element={
+                  <>
+                    <Breadcrumb title="Our Farm Shop" />
+                    <Shop />
+                  </>
+                }
+              />
+              <Route
+                path="/contact"
+                element={
+                  <>
+                    <Breadcrumb title="Contact Us" />
+                    <ContactArea />
+                  </>
+                }
+              />
+            </Routes>
             <Footer />
-          </main>
-        </>
-      )}
-    </div>
+          </>
+        )}
+      </div>
+    </Router>
   );
 }
 

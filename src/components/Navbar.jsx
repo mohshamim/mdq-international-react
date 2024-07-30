@@ -1,4 +1,9 @@
+import { Link, useLocation } from "react-router-dom";
+
 export default function Navbar() {
+  const location = useLocation();
+  const currentPath = location.pathname;
+
   return (
     <div
       id="sticky-header"
@@ -17,23 +22,23 @@ export default function Navbar() {
               ></div>
               <nav className="menu-nav show">
                 <div className="logo">
-                  <a href="index.html">
+                  <Link to="/">
                     <img src="src/assets/logo.png" alt="Logo" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="navbar-wrap main-menu d-none d-lg-flex">
                   <ul className="navigation">
-                    <li className="active">
-                      <a href="index.html">Home</a>
+                    <li className={currentPath === "/" ? "active" : ""}>
+                      <Link to="/">Home</Link>
                     </li>
-                    <li>
-                      <a href="about.html">About</a>
+                    <li className={currentPath === "/about" ? "active" : ""}>
+                      <Link to="/about">About</Link>
                     </li>
-                    <li className="dropdown">
-                      <a href="shop.html">Products</a>
+                    <li className={currentPath === "/shop" ? "active" : ""}>
+                      <Link to="/shop">Products</Link>
                     </li>
-                    <li>
-                      <a href="contact.html">Contacts</a>
+                    <li className={currentPath === "/contact" ? "active" : ""}>
+                      <Link to="/contact">Contacts</Link>
                     </li>
                   </ul>
                 </div>
@@ -57,35 +62,35 @@ export default function Navbar() {
 
               <nav className="menu-box">
                 <div className="nav-logo">
-                  <a href="index.html">
-                    <img src="img/logo/w_logo.png" alt="" title="" />
-                  </a>
+                  <Link to="/">
+                    <img src="img/logo/w_logo.png" alt="Logo" title="Home" />
+                  </Link>
                 </div>
                 <div className="menu-outer"></div>
                 <div className="social-links">
                   <ul className="clearfix">
                     <li>
-                      <a href="#">
+                      <a href="#" aria-label="Twitter">
                         <span className="fab fa-twitter"></span>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="#" aria-label="Facebook">
                         <span className="fab fa-facebook-square"></span>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="#" aria-label="Pinterest">
                         <span className="fab fa-pinterest-p"></span>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="#" aria-label="Instagram">
                         <span className="fab fa-instagram"></span>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="#" aria-label="YouTube">
                         <span className="fab fa-youtube"></span>
                       </a>
                     </li>
