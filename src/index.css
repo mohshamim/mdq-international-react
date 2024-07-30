@@ -1,3 +1,15 @@
+@import './styles/animate.min.css';
+@import './styles/aos.css';
+@import './styles/bootstrap.min.css';
+@import './styles/default.css';
+@import './styles/flaticon.css';
+@import './styles/fontawesome-all.min.css';
+@import './styles/jquery-ui.css';
+@import './styles/magnific-popup.css';
+@import './styles/meanmenu.css';
+@import './styles/odometer.css';
+@import './styles/owl.carousel.min.css';
+@import './styles/responsive.css';
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -516,7 +528,7 @@ ul.minicart .cart-content h4 a:hover,
 	position: absolute;
 	left: 5%;
 	top: 20%;
-	background-image: url(../img/images/menu_item_shape.png);
+	background-image: url(../src/assets/images/menu_item_shape.png);
 	width: 23px;
 	height: 14px;
 	background-repeat: no-repeat;
@@ -953,7 +965,7 @@ ul.minicart .cart-price .new {
 	line-height: 1.6;
 	color: #8b8b8b;
 	vertical-align: middle;
-	background: url("../img/icon/nw_selarw.png") no-repeat scroll 97.5% center;
+	background: url("../src/assets/icon/nw_selarw.png") no-repeat scroll 97.5% center;
 	background-color: #fff;
 	border: none;
 	border-radius: 0;
@@ -1463,7 +1475,7 @@ ul.minicart .cart-price .new {
 	content: "";
 	position: absolute;
 	left: 0;
-	background-image: url(../img/images/title_shape.png);
+	background-image: url(../src/assets/images/title_shape.png);
 	bottom: 0;
 	width: 137px;
 	height: 16px;
@@ -1508,7 +1520,7 @@ ul.minicart .cart-price .new {
 	left: 0;
 	right: 0;
 	bottom: -37px;
-	background-image: url(../img/images/features_shape.png);
+	background-image: url(../src/assets/images/features_shape.png);
 	width: 60px;
 	height: 7px;
 	background-repeat: no-repeat;
@@ -1796,13 +1808,13 @@ ul.minicart .cart-price .new {
 	color: #fff;
 }
 .white-title::before {
-	background-image: url(../img/images/title_shape02.png);
+	background-image: url(../src/assets/images/title_shape02.png);
 }
 
 /* Newsletter */
 .newsletter-wrap {
 	background-color: #fff;
-	background-image: url(../img/bg/newsletter_bg.jpg);
+	background-image: url(../src/assets/bg/newsletter_bg.jpg);
 	background-position: center;
 	background-size: cover;
 	text-align: center;
@@ -1963,7 +1975,7 @@ ul.minicart .cart-price .new {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-image: url(../img/images/project_shape.png);
+	background-image: url(../src/assets/images/project_shape.png);
 	width: 100px;
 	height: 12px;
 	background-repeat: no-repeat;
@@ -2296,7 +2308,7 @@ ul.minicart .cart-price .new {
 	box-shadow: 0px 13px 14.88px 1.12px rgba(47, 46, 45, 0.03);
 	border-radius: 50%;
 	border: 1px dotted #eeeeee;
-	background-image: url(../img/bg/frm_icon_bg.png);
+	background-image: url(../src/assets/bg/frm_icon_bg.png);
 	background-position: center;
 	background-size: cover;
 	margin: -98px auto 55px;
@@ -2516,7 +2528,7 @@ ul.minicart .cart-price .new {
 	line-height: 1.6;
 	color: #7d7d7d;
 	vertical-align: middle;
-	background: url("../img/icon/nw_selarw.png") no-repeat scroll 97.5% center;
+	background: url("../src/assets/icon/nw_selarw.png") no-repeat scroll 97.5% center;
 	background-color: transparent;
 	border: 1px solid #e6e1e1;
 	border-radius: 0;
@@ -3040,7 +3052,7 @@ ul.minicart .cart-price .new {
 	position: absolute;
 	left: 0;
 	top: 0;
-	background-image: url(../img/bg/plant_inner_shape01.png);
+	background-image: url(../src/assets/bg/plant_inner_shape01.png);
 	width: 208px;
 	height: 100%;
 	z-index: -1;
@@ -3051,7 +3063,7 @@ ul.minicart .cart-price .new {
 	position: absolute;
 	right: 0;
 	top: 0;
-	background-image: url(../img/bg/plant_inner_shape02.png);
+	background-image: url(../src/assets/bg/plant_inner_shape02.png);
 	width: 177px;
 	height: 100%;
 	z-index: -1;
@@ -3063,7 +3075,7 @@ ul.minicart .cart-price .new {
 	position: relative;
 }
 .plant-title-bg {
-	background: url(../img/images/plant_title.png) no-repeat;
+	background: url(../src/assets/images/plant_title.png) no-repeat;
 	width: 512px;
 	height: 91px;
 	text-align: center;
@@ -3476,7 +3488,7 @@ ul.minicart .cart-price .new {
     position: absolute;
     left: 35px;
     top: 8px;
-    background-image: url(../img/icon/quote.png);
+    background-image: url(../src/assets/icon/quote.png);
     width: 31px;
     height: 25px;
     background-repeat: no-repeat;
@@ -4376,7 +4388,7 @@ ul.minicart .cart-price .new {
     text-transform: uppercase;
 }
 .video-bg-two .white-title::before {
-	background-image: url(../img/images/w_title_shape.png);
+	background-image: url(../src/assets/images/w_title_shape.png);
 }
 .video-bg-two .video-play a {
     background-image: -moz-linear-gradient( 2deg, rgb(255,127,1) 0%, rgb(255,5,1) 100%);
@@ -4386,7 +4398,7 @@ ul.minicart .cart-price .new {
 
 /* Shop */
 .new-shop-bg {
-	background-image: url(../img/bg/new_shop_bg.jpg);
+	background-image: url(../src/assets/bg/new_shop_bg.jpg);
 	background-position: center;
 	background-size: cover;
 }
@@ -4448,7 +4460,7 @@ ul.minicart .cart-price .new {
 
 /* Testimonial */
 .new-testimonial-bg {
-	background-image: url(../img/bg/testimonial_bg.jpg);
+	background-image: url(../src/assets/bg/testimonial_bg.jpg);
 	background-position: center;
 	background-size: cover;
 }
@@ -4536,7 +4548,7 @@ ul.minicart .cart-price .new {
 	z-index: 1;
 }
 .choose-bg {
-    background-image: url(../img/bg/choose_bg.jpg);
+    background-image: url(../src/assets/bg/choose_bg.jpg);
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -4660,7 +4672,7 @@ ul.minicart .cart-price .new {
     left: 0;
     top: -145px;
     width: 100%;
-    background-image: url(../img/bg/choose_bg_shape01.png);
+    background-image: url(../src/assets/bg/choose_bg_shape01.png);
     height: 203px;
     background-position: center;
     background-size: cover;
@@ -4671,7 +4683,7 @@ ul.minicart .cart-price .new {
     left: 0px;
     bottom: -145px;
     width: 100%;
-    background-image: url(../img/bg/choose_bg_shape02.png);
+    background-image: url(../src/assets/bg/choose_bg_shape02.png);
     height: 200px;
     background-position: center center;
     background-size: cover;

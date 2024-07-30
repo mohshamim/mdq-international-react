@@ -1,19 +1,32 @@
-
-
-import './App.css'
-import Header from './Header';
-import Slider from './Slider';
+import React, { useState, useEffect } from 'react';
+import Preloader from './components/Preloader';
+import Header from './components/Header';
+import Slider from './components/Slider';
+import About from './components/About';
 
 function App() {
-  return (
+  const [isLoading, setIsLoading] = useState(true);
 
+  useEffect(() => {
+    // Simulate loading time
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // Replace 2000 with your desired loading time
+  }, []);
+
+  return (
     <div className="App">
-      <header>
-        <Header />
-      </header>
-      <main>
-        <Slider />
-      </main>
+      {isLoading ? <Preloader /> : (
+        <>
+          <header>
+            <Header />
+          </header>
+          <main>
+            <Slider />
+            <About />
+          </main>
+        </>
+      )}
     </div>
   );
 }
