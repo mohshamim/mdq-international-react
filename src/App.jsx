@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import Preloader from './components/Preloader';
-import Header from './components/Header';
-import Slider from './components/Slider';
-import About from './components/About';
+import { useState, useEffect } from "react";
+import Preloader from "./components/Preloader";
+import Navbar from "./components/Navbar";
+import Slider from "./components/Slider";
+import About from "./components/About";
+import Footer from "./components/Footer";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -16,14 +17,17 @@ function App() {
 
   return (
     <div className="App">
-      {isLoading ? <Preloader /> : (
+      {isLoading ? (
+        <Preloader />
+      ) : (
         <>
           <header>
-            <Header />
+            <Navbar />
           </header>
           <main>
             <Slider />
             <About />
+            <Footer />
           </main>
         </>
       )}
