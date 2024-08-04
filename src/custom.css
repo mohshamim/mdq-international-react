@@ -1,0 +1,54 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  h4 {
+    margin-bottom: 0;
+    color: #4d4d4d;
+  }
+}
+.logo img {
+  width: 55px;
+}
+
+/* .items-section {
+  flex-wrap: unset;
+} */
+
+.custom-organic-farm-item {
+  .organic-farm-style-two .org-frm-img img {
+    margin: 0px auto 0 !important;
+    border-radius: 6px;
+  }
+  .organic-farm-item {
+    padding: 24px 24px;
+  }
+}
+
+.organic-farm-item {
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.org-frm-img img {
+  transition: transform 0.3s;
+}
+
+.organic-farm-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.organic-farm-item:hover .org-frm-img img {
+  transform: scale(1.05);
+}
+
+.item-detail-heading {
+  .section-title::before {
+    left: auto !important;
+  }
+}
+
+.custom-about-us-image img {
+  max-width: 60%;
+}

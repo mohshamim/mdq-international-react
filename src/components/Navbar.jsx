@@ -23,8 +23,9 @@ export default function Navbar() {
               <nav className="menu-nav show">
                 <div className="logo">
                   <Link to="/">
-                    <img src="src/assets/logo.png" alt="Logo" />
+                    <img src="src/assets/logo/mdq-logo.svg" alt="Logo" />
                   </Link>
+                  <h4>MDQ International</h4>
                 </div>
                 <div className="navbar-wrap main-menu d-none d-lg-flex">
                   <ul className="navigation">

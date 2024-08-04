@@ -10,6 +10,7 @@ import Shop from "./components/Shop";
 import HomePage from "./components/Homepage";
 import Breadcrumb from "./components/Breadcrumb";
 import ContactArea from "./components/ContactArea";
+import ItemDetail from "./components/ItemDetail";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -55,6 +56,15 @@ function App() {
                   <>
                     <Breadcrumb title="Contact Us" />
                     <ContactArea />
+                  </>
+                }
+              />
+              <Route
+                path="/product/:title"
+                element={
+                  <>
+                    <Breadcrumb title="Our Farm Shop" />
+                    <ItemDetail />
                   </>
                 }
               />

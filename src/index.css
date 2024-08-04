@@ -1157,6 +1157,7 @@ ul.minicart .cart-price .new {
 .nav-logo img {
   width: 150px;
 }
+
 .mobile-menu {
   position: fixed;
   right: 0;
@@ -1449,10 +1450,10 @@ ul.minicart .cart-price .new {
   z-index: -1;
 }
 .slider-content h2 {
-  font-size: 100px;
-  text-transform: uppercase;
+  font-size: 70px;
+  text-transform: capitalize;
   color: #fff;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1;
   margin-bottom: 15px;
 }
@@ -2406,7 +2407,7 @@ ul.minicart .cart-price .new {
   text-align: center;
   background: #fff;
   border-radius: 10px;
-  padding: 0 25px;
+  padding: 0 24px;
   position: relative;
   z-index: 1;
 }

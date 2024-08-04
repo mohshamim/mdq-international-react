@@ -8,10 +8,9 @@ function HomePage() {
   return (
     <div>
       <Slider />
-      <Features />
       <About />
       <FarmingArea />
-      <Shop />
+      <Features />
     </div>
   );
 }

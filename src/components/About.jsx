@@ -1,4 +1,4 @@
-import faq_img from "../assets/images/faq_img.png";
+import about2 from "../assets/images/about2.jfif";
 function About() {
   return (
     <section
@@ -10,7 +10,7 @@ function About() {
         <div className="row align-items-center">
           <div className="col-lg-6">
             <div className="about-us-image">
-              <img src={faq_img} alt="About Us Image" />
+              <img src={about2} alt="About Us Image" />
             </div>
           </div>
           <div className="col-lg-6">
@@ -40,28 +40,7 @@ function About() {
                 products meet the highest standards of quality and
                 effectiveness.
               </p>
-              <ul className="about-list">
-                <li>
-                  <i className="fas fa-check"></i> Trusted manufacturer and
-                  supplier since 2010
-                </li>
-                <li>
-                  <i className="fas fa-check"></i> High-quality alternative
-                  protein products
-                </li>
-                <li>
-                  <i className="fas fa-check"></i> Comprehensive range of feed
-                  raw materials
-                </li>
-                <li>
-                  <i className="fas fa-check"></i> Commitment to sustainability
-                  and innovation
-                </li>
-                <li>
-                  <i className="fas fa-check"></i> Strong partnerships with
-                  farmers and industry experts
-                </li>
-              </ul>
+
               <a href="#" className="btn gradient-btn">
                 Learn More
               </a>
