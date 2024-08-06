@@ -14,7 +14,7 @@ export default function ContactArea() {
                 </div>
                 <div className="contact-info-content">
                   <h5>Phone Number</h5>
-                  <span>+02 5458 6598 523</span>
+                  <span>+91 98189 57200</span>
                 </div>
               </div>
             </div>
@@ -25,7 +25,7 @@ export default function ContactArea() {
                 </div>
                 <div className="contact-info-content">
                   <h5>Find Location</h5>
-                  <span>Walking Park, Angeles, NY</span>
+                  <span>216, Samiah Garden City, Hapur, Uttar Pradesh 245101</span>
                 </div>
               </div>
             </div>
@@ -36,7 +36,7 @@ export default function ContactArea() {
                 </div>
                 <div className="contact-info-content">
                   <h5>Our Mail</h5>
-                  <span>information@info.com</span>
+                  <span>mdqinternational01@gmail.com</span>
                 </div>
               </div>
             </div>

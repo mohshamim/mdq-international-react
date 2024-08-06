@@ -4,7 +4,6 @@ import Preloader from "./components/Preloader";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Footer from "./components/Footer";
-import Features from "./components/Features";
 import FarmingArea from "./components/FarmingArea";
 import Shop from "./components/Shop";
 import HomePage from "./components/Homepage";
@@ -46,7 +45,7 @@ function App() {
                 element={
                   <>
                     <Breadcrumb title="Our Farm Shop" />
-                    <Shop />
+                    <FarmingArea />
                   </>
                 }
               />
