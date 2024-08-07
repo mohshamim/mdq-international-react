@@ -4,7 +4,7 @@ import features_icon03 from "../assets/icon/features_icon03.png";
 
 const Features = () => {
   return (
-    <section className="features-area pt-120 pb-65">
+    <section className="features-area pt-60 pb-60">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-4 col-md-6 col-sm-8">

@@ -2477,6 +2477,8 @@ ul.minicart .cart-price .new {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  padding-top: 44px;
+  padding-bottom: 44px;
 }
 .organic-farm-style-two .org-frm-content .btn::before {
   display: none;
@@ -2495,7 +2497,7 @@ ul.minicart .cart-price .new {
   margin: -98px auto 0;
 }
 .farming-solid-bg .section-title {
-  margin-bottom: 170px;
+  margin-bottom: 44px;
 }
 .org-frm-shape {
   position: absolute;
@@ -3848,8 +3850,8 @@ ul.minicart .cart-price .new {
 .footer-bg {
   background-position: center;
   background-size: cover;
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 44px;
+  padding-bottom: 44px;
   position: relative;
 }
 .footer-text p {

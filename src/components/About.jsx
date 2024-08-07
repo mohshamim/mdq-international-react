@@ -7,7 +7,7 @@ function About() {
       style={{ backgroundImage: "url(img/bg/faq_bg.jpg)" }}
     >
       <div className="container">
-        <div className="row align-items-center">
+        <div className="row align-items-center about-us-area-row">
           <div className="col-lg-6">
             <div className="about-us-image">
               <img src={about2} alt="About Us Image" />
