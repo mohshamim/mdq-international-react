@@ -34,16 +34,16 @@ function Footer() {
                     <ul>
                       <li>
                         <i className="fas fa-map-marker-alt"></i>
-                        <span>Address: </span>PO Box W75 Street lan West new
-                        queens
+                        <span>Address: </span>216, Samiah Garden City, Hapur,
+                        Uttar Pradesh 245101
                       </li>
                       <li>
                         <i className="fas fa-headphones"></i>
-                        <span>Phone: </span>+24 1245 654 235
+                        <span>Phone: </span>+91 98189 57200
                       </li>
                       <li>
                         <i className="fas fa-envelope-open"></i>
-                        <span>Email: </span>info@exemple.com
+                        <span>Email: </span>mdqinternational01@gmail.com
                       </li>
                     </ul>
                   </div>
@@ -58,19 +58,19 @@ function Footer() {
                 <div className="fw-link">
                   <ul>
                     <li>
-                      <a href="#">Hydroponic (26)</a>
+                      <a href="#">RICE DDGS</a>
                     </li>
                     <li>
-                      <a href="#">Agriculture (11)</a>
+                      <a href="#">CORN DDGS</a>
                     </li>
                     <li>
-                      <a href="#">Foods (9)</a>
+                      <a href="#">TURMERIC DOC</a>
                     </li>
                     <li>
-                      <a href="#">Milking (3)</a>
+                      <a href="#">CORN GLUTEN</a>
                     </li>
                     <li>
-                      <a href="#">Nutrition (3)</a>
+                      <a href="#">MUSTARD DOC</a>
                     </li>
                   </ul>
                 </div>
@@ -79,42 +79,27 @@ function Footer() {
             <div className="col-xl-3 col-lg-4 col-sm-6">
               <div className="footer-widget mb-50">
                 <div className="fw-title mb-35">
-                  <h5>Need Help?</h5>
+                  <h5>Products</h5>
                 </div>
-                <div className="footer-blog-post">
+                <div className="fw-link">
                   <ul>
                     <li>
-                      <div className="f-blog-post-thumb">
-                        <a href="#">
-                          <img src={f_blog_thumb01} alt="Blog Thumbnail 1" />
-                        </a>
-                      </div>
-                      <div className="f-blog-post-content">
-                        <h5>
-                          <a href="#">
-                            Agriculture is the science and art of cultivating
-                          </a>
-                        </h5>
-                        <span>Tonoy Pueyo</span>
-                      </div>
+                      <a href="#">DORB</a>
                     </li>
                     <li>
-                      <div className="f-blog-post-thumb">
-                        <a href="#">
-                          <img src={f_blog_thumb01} alt="Blog Thumbnail 2" />
-                        </a>
-                      </div>
-                      <div className="f-blog-post-content">
-                        <h5>
-                          <a href="#">Whereby farming doated species create</a>
-                        </h5>
-                        <span>Mark Wiens</span>
-                      </div>
+                      <a href="#">MBM</a>
+                    </li>
+                    <li>
+                      <a href="#">LEATHER MEAL</a>
+                    </li>
+                    <li>
+                      <a href="#">OTHER AGRO PRODUCTS</a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
+
             <div className="col-xl-3 col-lg-4 col-md-6">
               <div className="footer-widget mb-50">
                 <div className="fw-title mb-35">
