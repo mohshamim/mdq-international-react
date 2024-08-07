@@ -27,7 +27,7 @@
 
 .organic-farm-item {
   overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.8s;
 }
 
 .org-frm-img img {
@@ -52,3 +52,89 @@
 .custom-about-us-image img {
   max-width: 60%;
 }
+.about-us-image img {
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for transform and opacity */
+  opacity: 1; /* Ensure image starts fully visible */
+}
+
+.about-us-image img:hover {
+  transform: scale(1.05);
+}
+
+.features-icon img {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 20px;
+}
+
+.features-icon img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.spec-table {
+  /* Table styling */
+  table {
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px; /* Add border-radius */
+    overflow: hidden; /* Ensure border-radius is applied */
+  }
+
+  table:hover {
+    transform: scale(1.01);
+  }
+
+  th,
+  td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  th {
+    background-color: #4caf50;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+
+  td {
+    font-size: 14px;
+    color: #333;
+  }
+
+  /* Responsive styling */
+  @media screen and (max-width: 768px) {
+    table {
+      width: 100%;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      font-size: 12px;
+    }
+  }
+}
+
+/*-----------------Media Queries-------------------------*/

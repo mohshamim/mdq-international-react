@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import logo from "../assets/logo/mdq-logo.svg";
 
 export default function Navbar() {
   const location = useLocation();
@@ -23,7 +24,7 @@ export default function Navbar() {
               <nav className="menu-nav show">
                 <div className="logo">
                   <Link to="/">
-                    <img src="src/assets/logo/mdq-logo.svg" alt="Logo" />
+                    <img src={logo} alt="Logo" />
                   </Link>
                   <h4>MDQ International</h4>
                 </div>

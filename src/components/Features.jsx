@@ -1,6 +1,7 @@
 import features_icon01 from "../assets/icon/features_icon01.png";
 import features_icon02 from "../assets/icon/features_icon02.png";
 import features_icon03 from "../assets/icon/features_icon03.png";
+
 const Features = () => {
   return (
     <section className="features-area pt-120 pb-65">
@@ -9,15 +10,19 @@ const Features = () => {
           <div className="col-lg-4 col-md-6 col-sm-8">
             <div className="features-item features-style-two text-center mb-50">
               <div className="features-icon">
-                <img src={features_icon01} alt="Best Quality Products" />
+                <img
+                  src={features_icon01}
+                  alt="Sustainable Farming Practices"
+                />
               </div>
               <div className="features-content">
                 <h4>
-                  <a href="#">BEST QUALITY PRODUCTS</a>
+                  <a href="#">Sustainable Farming Practices</a>
                 </h4>
                 <p>
-                  Agriculture was the key development in the rise of sedentary
-                  human civilization, whereby farming domesticated species.
+                  Implementing sustainable farming practices helps in preserving
+                  the environment, reducing pollution, and promoting
+                  biodiversity.
                 </p>
               </div>
             </div>
@@ -25,15 +30,18 @@ const Features = () => {
           <div className="col-lg-4 col-md-6 col-sm-8">
             <div className="features-item features-style-two text-center mb-50">
               <div className="features-icon">
-                <img src={features_icon02} alt="Specifically Farming" />
+                <img
+                  src={features_icon02}
+                  alt="Advanced Agricultural Technology"
+                />
               </div>
               <div className="features-content">
                 <h4>
-                  <a href="#">Specifically Farming</a>
+                  <a href="#">Advanced Agricultural Technology</a>
                 </h4>
                 <p>
-                  Agriculture was the key development in the rise of sedentary
-                  human civilization, whereby farming domesticated species.
+                  Using advanced technology in agriculture, such as drones and
+                  sensors, to improve crop yields and monitor soil health.
                 </p>
               </div>
             </div>
@@ -41,15 +49,16 @@ const Features = () => {
           <div className="col-lg-4 col-md-6 col-sm-8">
             <div className="features-item features-style-two text-center mb-50">
               <div className="features-icon">
-                <img src={features_icon03} alt="Organic Farm Importance" />
+                <img src={features_icon03} alt="Organic Farming Benefits" />
               </div>
               <div className="features-content">
                 <h4>
-                  <a href="#">Organic Farm Important?</a>
+                  <a href="#">Organic Farming Benefits</a>
                 </h4>
                 <p>
-                  Agriculture was the key development in the rise of sedentary
-                  human civilization, whereby farming domesticated species.
+                  Organic farming avoids the use of synthetic chemicals,
+                  promoting healthier soil and reducing pollution, which
+                  benefits both the environment and consumers.
                 </p>
               </div>
             </div>
