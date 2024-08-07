@@ -10,7 +10,10 @@
 .logo img {
   width: 55px;
 }
-
+.footer-logo img {
+  width: 18%;
+  margin-bottom: 30px;
+}
 /* .items-section {
   flex-wrap: unset;
 } */

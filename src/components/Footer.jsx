@@ -1,4 +1,3 @@
-import w_logo from "../assets/logo/w_logo.png";
 import footer_vector01 from "../assets/images/footer_vector01.png";
 import footer_vector02 from "../assets/images/footer_vector02.png";
 import footer_vector03 from "../assets/images/footer_vector03.png";
@@ -6,7 +5,7 @@ import ae_02 from "../assets/icon/ae_02.png";
 import discover from "../assets/icon/discover.png";
 import stripe from "../assets/icon/stripe.png";
 import visa_2 from "../assets/icon/visa_2.png";
-import f_blog_thumb01 from "../assets/blog/f_blog_thumb01.jpg";
+import logo from "../assets/logo/mdq-logo.svg";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -20,10 +19,8 @@ function Footer() {
           <div className="row justify-content-between">
             <div className="col-xl-3 col-lg-4 col-md-6">
               <div className="footer-widget mb-50">
-                <div className="footer-logo mb-35">
-                  <a href="index.html">
-                    <img src={w_logo} alt="Logo" />
-                  </a>
+                <div className="footer-logo">
+                  <img src={logo} alt="Logo" />
                 </div>
                 <div className="footer-text">
                   <p>
