@@ -5,11 +5,13 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import FarmingArea from "./components/FarmingArea";
-import Shop from "./components/Shop";
 import HomePage from "./components/Homepage";
 import Breadcrumb from "./components/Breadcrumb";
 import ContactArea from "./components/ContactArea";
 import ItemDetail from "./components/ItemDetail";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -44,7 +46,7 @@ function App() {
                 path="/shop"
                 element={
                   <>
-                    <Breadcrumb title="Our Farm Shop" />
+                    <Breadcrumb title="Products" />
                     <FarmingArea />
                   </>
                 }

@@ -139,7 +139,9 @@
     }
   }
 }
-
+.contact-info-icon {
+  flex-shrink: 0;
+}
 /*-----------------Media Queries-------------------------*/
 
 /* Extra Small Devices (Mobile Phones) */

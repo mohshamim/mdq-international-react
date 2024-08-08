@@ -1,10 +1,12 @@
+import React from "react";
 import footer_vector01 from "../assets/images/footer_vector01.png";
 import footer_vector02 from "../assets/images/footer_vector02.png";
 import footer_vector03 from "../assets/images/footer_vector03.png";
-import ae_02 from "../assets/icon/ae_02.png";
+import footer_bg from "../assets/bg/footer_bg.jpg";
 import discover from "../assets/icon/discover.png";
 import stripe from "../assets/icon/stripe.png";
 import visa_2 from "../assets/icon/visa_2.png";
+import ae_02 from "../assets/icon/ae_02.png"; // Make sure this path is correct
 import logo from "../assets/logo/mdq-logo.svg";
 
 function Footer() {
@@ -13,7 +15,7 @@ function Footer() {
     <footer>
       <div
         className="footer-top footer-bg fix"
-        data-background="../assets/bg/footer_bg.jpg"
+        style={{ backgroundImage: `url(${footer_bg})` }}
       >
         <div className="container">
           <div className="row justify-content-between">
@@ -168,7 +170,7 @@ function Footer() {
                 </p>
               </div>
             </div>
-            <div className="col-lg-6 col-md-6 d-none d-md-block">
+            {/* <div className="col-lg-6 col-md-6 d-none d-md-block">
               <div className="payment-method-list">
                 <ul>
                   <li>
@@ -193,7 +195,7 @@ function Footer() {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

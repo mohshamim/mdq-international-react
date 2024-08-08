@@ -1,8 +1,8 @@
 import About from "./About";
 import FarmingArea from "./FarmingArea";
 import Features from "./Features";
-import Shop from "./Shop";
 import Slider from "./Slider";
+import TestimonialArea from "./TestimonialArea";
 
 function HomePage() {
   return (
@@ -11,6 +11,7 @@ function HomePage() {
       <About />
       <FarmingArea />
       <Features />
+      <TestimonialArea />
     </div>
   );
 }

@@ -25,7 +25,9 @@ export default function ContactArea() {
                 </div>
                 <div className="contact-info-content">
                   <h5>Find Location</h5>
-                  <span>216, Samiah Garden City, Hapur, Uttar Pradesh 245101</span>
+                  <span>
+                    216, Samiah Garden City, Hapur, Uttar Pradesh 245101
+                  </span>
                 </div>
               </div>
             </div>
