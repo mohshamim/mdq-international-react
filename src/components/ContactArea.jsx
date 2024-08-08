@@ -1,16 +1,43 @@
-import contact_icon01 from "../assets/icon/contact_icon01.png";
-import contact_icon02 from "../assets/icon/contact_icon02.png";
-import contact_icon03 from "../assets/icon/contact_icon03.png";
+import React from "react";
+import emailjs from "emailjs-com";
+
 export default function ContactArea() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_b1ceuve",
+        "template_i4mt7oe",
+        event.target,
+        "KMyqG6IbZ7BR4bep9"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message sent successfully!");
+          event.target.reset(); // Optionally reset the form
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Failed to send message.");
+        }
+      );
+  };
+
   return (
     <section className="contact-area">
       <div className="contact-info-wrap pt-90 pb-60">
         <div className="container">
           <div className="row justify-content-center justify-content-lg-around">
+            {/* Contact info boxes */}
             <div className="col-xl-3 col-lg-4 col-sm-6">
               <div className="contact-info-box mb-30">
                 <div className="contact-info-icon">
-                  <img src={contact_icon01} alt="Phone Icon" />
+                  <img
+                    src="/src/assets/icon/contact_icon01.png"
+                    alt="Phone Icon"
+                  />
                 </div>
                 <div className="contact-info-content">
                   <h5>Phone Number</h5>
@@ -21,7 +48,10 @@ export default function ContactArea() {
             <div className="col-xl-3 col-lg-4 col-sm-6">
               <div className="contact-info-box mb-30">
                 <div className="contact-info-icon">
-                  <img src={contact_icon02} alt="Location Icon" />
+                  <img
+                    src="/src/assets/icon/contact_icon02.png"
+                    alt="Location Icon"
+                  />
                 </div>
                 <div className="contact-info-content">
                   <h5>Find Location</h5>
@@ -34,7 +64,10 @@ export default function ContactArea() {
             <div className="col-xl-3 col-lg-4 col-sm-6">
               <div className="contact-info-box mb-30">
                 <div className="contact-info-icon">
-                  <img src={contact_icon03} alt="Mail Icon" />
+                  <img
+                    src="/src/assets/icon/contact_icon03.png"
+                    alt="Mail Icon"
+                  />
                 </div>
                 <div className="contact-info-content">
                   <h5>Our Mail</h5>
@@ -60,27 +93,44 @@ export default function ContactArea() {
           <div className="row justify-content-center">
             <div className="col-xl-10 col-lg-12">
               <div className="contact-form">
-                <form action="#">
+                <form onSubmit={handleSubmit}>
                   <div className="row">
                     <div className="col-md-6">
-                      <input type="text" placeholder="First Name *" />
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="First Name *"
+                        required
+                      />
                     </div>
                     <div className="col-md-6">
-                      <input type="text" placeholder="Last Name" />
+                      <input
+                        type="text"
+                        name="last_name"
+                        placeholder="Last Name"
+                      />
                     </div>
                     <div className="col-md-6">
-                      <input type="text" placeholder="Phone No" />
+                      <input type="text" name="phone" placeholder="Phone No" />
                     </div>
                     <div className="col-md-6">
-                      <input type="email" placeholder="Your Email *" />
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Your Email *"
+                        required
+                      />
                     </div>
                   </div>
                   <textarea
                     name="message"
                     id="message"
                     placeholder="Message"
+                    required
                   ></textarea>
-                  <button className="btn gradient-btn">Send Now</button>
+                  <button type="submit" className="btn gradient-btn">
+                    Send Now
+                  </button>
                 </form>
               </div>
             </div>
