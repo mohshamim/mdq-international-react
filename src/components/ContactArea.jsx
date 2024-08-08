@@ -1,5 +1,7 @@
-import React from "react";
 import emailjs from "emailjs-com";
+import contact_icon01 from "../assets/icon/contact_icon01.png";
+import contact_icon02 from "../assets/icon/contact_icon02.png";
+import contact_icon03 from "../assets/icon/contact_icon03.png";
 
 export default function ContactArea() {
   const handleSubmit = (event) => {
@@ -34,10 +36,7 @@ export default function ContactArea() {
             <div className="col-xl-3 col-lg-4 col-sm-6">
               <div className="contact-info-box mb-30">
                 <div className="contact-info-icon">
-                  <img
-                    src="/src/assets/icon/contact_icon01.png"
-                    alt="Phone Icon"
-                  />
+                  <img src={contact_icon01} alt="Phone Icon" />
                 </div>
                 <div className="contact-info-content">
                   <h5>Phone Number</h5>
@@ -48,10 +47,7 @@ export default function ContactArea() {
             <div className="col-xl-3 col-lg-4 col-sm-6">
               <div className="contact-info-box mb-30">
                 <div className="contact-info-icon">
-                  <img
-                    src="/src/assets/icon/contact_icon02.png"
-                    alt="Location Icon"
-                  />
+                  <img src={contact_icon02} alt="Location Icon" />
                 </div>
                 <div className="contact-info-content">
                   <h5>Find Location</h5>
@@ -64,10 +60,7 @@ export default function ContactArea() {
             <div className="col-xl-3 col-lg-4 col-sm-6">
               <div className="contact-info-box mb-30">
                 <div className="contact-info-icon">
-                  <img
-                    src="/src/assets/icon/contact_icon03.png"
-                    alt="Mail Icon"
-                  />
+                  <img src={contact_icon03} alt="Mail Icon" />
                 </div>
                 <div className="contact-info-content">
                   <h5>Our Mail</h5>
