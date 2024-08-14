@@ -285,3 +285,24 @@
     padding-bottom: 24px;
   }
 }
+
+._2qp0Z {
+  background-color: #5ad167;
+  position: fixed !important;
+  width: 60px !important;
+  height: 60px !important;
+  bottom: 40px !important;
+  right: 40px !important;
+  background-color: #25d366 !important;
+  color: #fff !important;
+  border-radius: 50px !important;
+  text-align: center !important;
+  font-size: 30px !important;
+  box-shadow: 2px 2px 3px #999 !important;
+  z-index: 10000 !important; /* Ensures it's on top */
+  
+}
+._1qse9 {
+
+  z-index: 999 !important;
+}

@@ -12,6 +12,8 @@ import ItemDetail from "./components/ItemDetail";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { WhatsAppWidget } from "react-whatsapp-widget";
+import "react-whatsapp-widget/dist/index.css";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -31,6 +33,11 @@ function App() {
         ) : (
           <>
             <Navbar />
+            <WhatsAppWidget
+              phoneNumber="+919818957200"
+              companyName="MDQ International"
+              message="Hello! How can we help you?"
+            />
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route
@@ -70,6 +77,7 @@ function App() {
                 }
               />
             </Routes>
+
             <Footer />
           </>
         )}
