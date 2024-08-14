@@ -166,7 +166,14 @@ function Footer() {
               <div className="copyright-text">
                 <p>
                   Copyright © {currentYear} <a href="#">MDQ International</a>{" "}
-                  All Rights Reserved.
+                  All Rights Reserved. Developed by{" "}
+                  <a
+                    href="https://mohammad-shamim.dev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Mo. Shamim
+                  </a>
                 </p>
               </div>
             </div>
